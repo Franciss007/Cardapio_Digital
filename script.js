@@ -155,7 +155,7 @@ function finalizarPedido() {
     const mensagemPedido = criarMensagemPedido();
 
     // Substitua o número de telefone pelo número do WhatsApp desejado
-    const numeroWhatsApp = "+1234567890";
+    const numeroWhatsApp = "+5598999928302";
 
     // Abre uma nova janela ou guia do navegador com o link do WhatsApp
     window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemPedido)}`);
