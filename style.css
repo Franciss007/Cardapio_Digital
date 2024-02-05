@@ -40,3 +40,44 @@ span {
     margin-right: 10px;
     font-weight: bold;
 }
+
+.cardapio {
+    width: 100%;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item-imagem {
+    display: inline-block;
+    margin-left: 10px; /* Adapte conforme necessário para ajustar o espaçamento entre o texto e a imagem */
+}
+
+.imagem-espeto {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.item-imagem {
+    position: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    border: 10px solid orange;
+    border-radius: 10px;
+    
+}
