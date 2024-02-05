@@ -28,17 +28,20 @@ button {
     cursor: pointer;
 }
 
-.item-imagem {
-    position: center;
-    height: auto;
-    size: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    border: 10px solid orange;
-    border-radius: 10px;
-    width: 100px
+.imagem-espeto {
+    /* Adicione estilos aqui */
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 10px; /* Margem à direita para separar do texto */
+    /* Outros estilos, se necessário */
 }
+
+/* Se você quiser alinhar a imagem com o texto */
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
 span {
     margin-left: 10px;
     margin-right: 10px;
