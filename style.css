@@ -36,11 +36,6 @@ button {
     /* Outros estilos, se necessário */
 }
 
-/* Se você quiser alinhar a imagem com o texto */
-.menu-item {
-    display: flex;
-    align-items: center;
-}
 
 span {
     margin-left: 10px;
