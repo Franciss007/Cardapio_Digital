@@ -29,18 +29,8 @@ button {
 }
 
 .imagem-espeto {
-    /* Adicione estilos aqui */
-    width: 100px; /* Largura da imagem */
+
     height: auto; /* Altura automática para manter a proporção */
-    margin-right: 10px; /* Margem à direita para separar do texto */
-    /* Outros estilos, se necessário */
-}
-
-
-span {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: bold;
 }
 
 .cardapio {
