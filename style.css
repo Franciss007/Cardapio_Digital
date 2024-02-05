@@ -37,6 +37,7 @@ button {
     margin-bottom: 50px;
     border: 10px solid orange;
     border-radius: 10px;
+    width: 100px
 }
 span {
     margin-left: 10px;
