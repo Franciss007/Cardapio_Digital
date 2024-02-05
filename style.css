@@ -28,7 +28,7 @@ button {
     cursor: pointer;
 }
 
-.imagem-espeto {
+.imagem-item {
     /* Adicione estilos aqui */
     width: 100px; /* Largura da imagem */
     height: auto; /* Altura automática para manter a proporção */
