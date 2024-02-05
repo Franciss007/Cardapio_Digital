@@ -4,13 +4,34 @@ const menuItems = [
     { id: 3, name: "Coca Lata", price: 5 },
     { id: 4, name: "Fanta Lata", price: 5 },
     { id: 5, name: "Jesus Lata", price: 5 },
-    { id: 6, name: "Espeto de Carne", price: 18 },
-    { id: 7, name: "Espeto de Frango", price: 18 },
-    { id: 8, name: "Espeto Misto", price: 18 },
+    { id: 6, name: "Espeto de Carne", price: 18, image: "https://sakura.com.br/wp-content/uploads/2020/07/Espetinho_Receita_Sakura.jpg"},
+    { id: 7, name: "Espeto de Frango", price: 18, image: "caminho/para/imagem_frango.jpg" },
+    { id: 8, name: "Espeto Misto", price: 18, image: "caminho/para/imagem_misto.jpg" },
     { id: 9, name: "Batata Frita P", price: 7 },
     { id: 10, name: "Batata Frita G", price: 10 },
-    { id: 11, name: "Espeto", price: 10, observacao: "Não tem acompanhamentos, apenas o espeto" },
+    { id: 11, name: "Espeto", price: 10, observacao: "Não tem acompanhamentos, apenas o espeto", image: "caminho/para/imagem_espeto.jpg" },
 ];
+
+function criarElementoMenu(item) {
+    const menuItem = document.createElement("div");
+    menuItem.className = "menu-item";
+
+    const imagemEspeto = item.image ? `<div class="item-imagem"><img src="${item.image}" alt="${item.name}" class="imagem-espeto" /></div>` : "";
+
+    menuItem.innerHTML = `<p>${item.name} - R$${item.price.toFixed(2)}</p>
+                          <label>Observação:
+                            <input type="text" id="observacao-${item.id}" placeholder="Digite aqui">
+                          </label>
+                          ${item.id >= 6 && item.id <= 8 ? criarOpcoesEspeto(item.id) : ""}
+                          <button onclick="adicionarAoPedido(${item.id})">Adicionar</button>
+                          <button onclick="removerDoPedido(${item.id})">Remover</button>
+                          <span id="quantidade-${item.id}">0</span>
+                          ${imagemEspeto}`;
+
+    return menuItem;
+}
+
+// Restante do código permanece inalterado
 
 let pedido = [];
 
@@ -33,20 +54,6 @@ function renderizarMenu() {
     pedidoResumo.innerHTML = "<h2>Resumo do Pedido</h2>";
 }
 
-function criarElementoMenu(item) {
-    const menuItem = document.createElement("div");
-    menuItem.className = "menu-item";
-    menuItem.innerHTML = `<p>${item.name} - R$${item.price.toFixed(2)}</p>
-                          <label>Observação:
-                            <input type="text" id="observacao-${item.id}" placeholder="Digite aqui">
-                          </label>
-                          ${item.id >= 6 && item.id <= 8 ? criarOpcoesEspeto(item.id) : ""}
-                          <button onclick="adicionarAoPedido(${item.id})">Adicionar</button>
-                          <button onclick="removerDoPedido(${item.id})">Remover</button>
-                          <span id="quantidade-${item.id}">0</span>`;
-
-    return menuItem;
-}
 
 function criarOpcoesEspeto(itemId) {
     return `<div>
@@ -155,7 +162,7 @@ function finalizarPedido() {
     const mensagemPedido = criarMensagemPedido();
 
     // Substitua o número de telefone pelo número do WhatsApp desejado
-    const numeroWhatsApp = "+5598999928302";
+    const numeroWhatsApp = "+98999928302";
 
     // Abre uma nova janela ou guia do navegador com o link do WhatsApp
     window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemPedido)}`);
