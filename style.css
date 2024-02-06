@@ -64,11 +64,19 @@ body {
     width: auto;
     height: auto;
     border: 30px solid blue;
-
+}
 .imagem-espeto {
     width: auto;
     height: auto;
     border: 30px solid blue;
+}
+.item-imagem {
+    width: auto;
+    height: auto;
+    border: 30px solid blue;
+}   
+
+
     
 
 
