@@ -6,7 +6,7 @@ const menuItems = [
     { id: 5, name: "Jesus Lata", price: 5 },
     { id: 6, name: "Espeto de Carne", price: 18, image: "https://sakura.com.br/wp-content/uploads/2020/07/Espetinho_Receita_Sakura.jpg"},
     { id: 7, name: "Espeto de Frango", price: 18, image: "https://as1.ftcdn.net/v2/jpg/03/51/38/64/1000_F_351386458_8zCQnfDdvLp25fdBvH56WmRbjclBPOSO.jpg" },
-    { id: 8, name: "Espeto Misto", price: 18, image: "caminho/para/imagem_misto.jpg" },
+    { id: 8, name: "Espeto Misto", price: 18, image: "https://t3.ftcdn.net/jpg/02/13/13/44/240_F_213134405_7w2DpkULZlmlbBCikBAGseRLzHZY6DE3.jpg" },
     { id: 9, name: "Batata Frita P", price: 7 },
     { id: 10, name: "Batata Frita G", price: 10 },
     { id: 11, name: "Espeto", price: 10, observacao: "Não tem acompanhamentos, apenas o espeto", image: "caminho/para/imagem_espeto.jpg" },
