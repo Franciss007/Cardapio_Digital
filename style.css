@@ -28,12 +28,7 @@ button {
     cursor: pointer;
 }
 
-.imagem-item {
-    /* Adicione estilos aqui */
-    width: auto; /* Largura da imagem */
-    height: auto; /* Altura automática para manter a proporção */
-  
-}
+
 .cardapio {
     width: 100%;
 }
