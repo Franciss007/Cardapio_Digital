@@ -60,4 +60,9 @@ body {
     width:auto;
     height: auto;
 
+.menu-item {
+    width: auto;
+    height: auto;
+    border: 10px solid blue;
+
 
