@@ -2,15 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: orange;
+    background-color: white;
 }
 
 .menu-container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: black;
-    border-radius: 8px;
+    background-color: orange;
+    border-radius: 8px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
