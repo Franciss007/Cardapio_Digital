@@ -74,6 +74,16 @@ body {
     width: auto;
     height: auto;
     border: 30px solid blue;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    order:1;
+        max-width: 100px;
+        max-height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    width:auto;
+    height: auto;
 }   
 
 
