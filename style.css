@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: orange;
-    border: 10px black;
+    border: 10px solid black;
 }
 
 .menu-container {
